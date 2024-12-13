@@ -4,10 +4,10 @@
   "icons": {
     "64": "images/pudina-chaas.png"
   },
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Chatbot as a service",
   "permissions": ["scripting"],
-  "host_permissions": ["http://*/*", "https://*/*"],
+  "host_permissions": ["https://eips.ethereum.org/*"],
   "web_accessible_resources": [
     {
       "resources": ["widget/static/js/main.*.js", "widget/asset-manifest.json"],
@@ -17,7 +17,7 @@
   "content_scripts": [
     {
       "run_at": "document_end",
-      "matches": ["http://*/*", "https://*/*"],
+      "matches": ["https://eips.ethereum.org/*"],
       "js": ["inject.js"]
     }
   ]
