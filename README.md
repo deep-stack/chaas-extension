@@ -1,9 +1,17 @@
 # Chaas Extension
 
-## Install extension in chrome locally
+## Installing the Extension Locally in Chrome
 
-- Go to `chrome://extensions/` and enable `Developer mode`
+- Open Chrome and navigate to `chrome://extensions/`.
 
-- Click on `Load unpacked` and select the [extension](./extension) folder
+- Enable `Developer mode` in the top-right corner.
 
-- The `chaas` extension would get added.
+- Click on the `Load unpacked` button.
+
+- Select the [`extension`](./extension) folder from your local files.
+
+- The `Chaas` extension will be added to Chrome.
+
+- Visit [Ethereum Improvement Proposals](https://eips.ethereum.org/).
+
+- A chatbot widget should appear in the bottom-right corner of the page.
