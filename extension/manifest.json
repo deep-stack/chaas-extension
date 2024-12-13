@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Chaas",
+  "icons": {
+    "64": "images/pudina-chaas.png"
+  },
+  "version": "1.0.0",
+  "description": "Chatbot as a service",
+  "permissions": ["scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "web_accessible_resources": [
+    {
+      "resources": ["widget/static/js/main.*.js", "widget/asset-manifest.json"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["inject.js"]
+    }
+  ]
+}
